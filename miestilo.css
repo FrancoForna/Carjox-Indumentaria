@@ -29,7 +29,7 @@ ul a {
   list-style: none;
   text-decoration: none;
   font-family: "Anton", sans-serif;
-  color: rgb(228, 91, 41);
+  color: rgb(15, 14, 14);
   font-weight: light;
   font-size: large;
 }
@@ -113,7 +113,7 @@ nav a:hover {
 
 .anton {
   font-family: "Anton", sans-serif;
-  color: rgb(228, 91, 41);
+  color: rgb(20, 20, 19);
 }
 
 /*Termina sección de clases para estilos de imprenta*/
