@@ -1,0 +1,526 @@
+@charset "UTF-8";
+.miBody {
+  background-image: linear-gradient(90deg, white, #ffdcc8);
+  margin: 0 auto;
+  /* padding: 0; */
+  font-family: Roboto Condensed;
+}
+
+.navConf {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  z-index: 1;
+  background-image: url("./ImagenesProyecto/Index/barranav.jpg");
+  max-height: 5vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0.01px;
+  border: 2px solid coral;
+}
+
+.altNav {
+  transform: scale(0.9);
+}
+
+ul a {
+  list-style: none;
+  text-decoration: none;
+  font-family: Roboto Condensed;
+  color: black;
+  font-weight: light;
+  font-size: large;
+}
+
+li {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  font-size: 10px;
+  padding: 10px;
+}
+
+ul ul {
+  position: absolute;
+  display: none;
+}
+
+ul ul li {
+  display: block;
+  background-image: url("./ImagenesProyecto/Index/barranav.jpg");
+  border: coral 2px solid;
+  background-color: #ffe3df;
+}
+
+ul li:hover ul {
+  display: block;
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  font-weight: bolder;
+}
+
+/*Utilizar siempre antes que left solo*/
+
+/*Sección de clases para estilos de imprenta*/
+.large {
+  font-size: large;
+}
+
+.xlarge {
+  font-size: x-large;
+}
+
+.xxlarge {
+  font-size: xx-large;
+}
+
+.mayus {
+  text-transform: uppercase;
+}
+
+.wordspace {
+  word-spacing: 15px;
+}
+
+.roboto {
+  font-family: Roboto Condensed;
+}
+
+.comic {
+  font-style: italic;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.subr {
+  text-decoration: underline;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+.akaya {
+  font-family: "Akaya Telivigala", cursive;
+}
+
+/*Termina sección de clases para estilos de imprenta*/
+/*Sección de clases para estilos de imagen*/
+.sinborde {
+  border-radius: 100%;
+}
+
+.medioborde {
+  border-radius: 10%;
+}
+
+.borde {
+  border: black 2px solid;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imagenPortada {
+  width: 100%;
+}
+
+.fondoGris {
+  background-color: #e6dcd0;
+}
+
+/*Ajuste de imagenes */
+.deportista {
+  width: 65%;
+  height: 70vh;
+  margin: 0;
+  border: coral 4px solid;
+}
+
+.mismoTamaño {
+  width: 400px;
+  height: 68vh;
+  margin: 0px;
+  background-size: cover;
+  position: center;
+  border-radius: 10%;
+}
+
+.mismoTamaño2 {
+  width: 500px;
+  height: 58vh;
+  margin: 7px;
+  background-size: cover;
+  position: center;
+  border-radius: 10%;
+}
+
+.formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tamañoBanner {
+  width: 85%;
+  margin: 10px;
+}
+
+.tamañoBannerA {
+  width: 50%;
+}
+
+.mapa {
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+.imgMapa1 {
+  width: 80%;
+  max-height: 70vh;
+  border-radius: 5%;
+}
+
+.imgMapa2 {
+  width: 50%;
+  max-height: 70vh;
+  border-radius: 5%;
+}
+
+.transformScale {
+  transform: scale(0.9, 0.9);
+}
+
+.tamañoForm {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.imgCartas {
+  width: 286px;
+  height: 250px;
+}
+
+.fondoCartas {
+  background-image: linear-gradient(270deg, #ffe6e6, #ffdcc8);
+}
+
+.fondoBotonEnviar {
+  background-color: coral;
+}
+
+.paddingSCartas {
+  margin-bottom: 50px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.paddingCartas {
+  padding: 15px;
+  margin: 10px;
+}
+
+.paddingTit {
+  padding: 10px;
+  margin: 7px;
+}
+
+.fontTit {
+  font-size: x-large;
+}
+
+/*Termina sección de clases para estilos de imagen*/
+/*Sección de transiciones, transformaciones y degradados*/
+.grad {
+  transition: all 1s;
+}
+
+.grad:hover {
+  transform: scale(1.0008, 1.0008);
+}
+
+/*Sección de clases para pocision de elementos*/
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.center {
+  text-align: center;
+}
+
+/*Flex-box*/
+.contenedor-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  height: 5vh;
+  align-items: center;
+  padding: 10px;
+}
+
+.contenedor-deportiva {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2px;
+  /* background-image: url("./ImagenesProyecto/Index/Mujerdeportiva3.jpg"); */
+  width: 800px;
+  height: 64vh;
+  background-size: cover;
+  /* animation-name: efectoPrincipal;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    background-size: cover;
+    color: whitesmoke; */
+}
+
+/* .fondoCarrusel1 {
+  width: 100%;
+  height: 60vh;
+  background-image: url("./ImagenesProyecto/Index/Mujerdeportiva33.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fondoCarrusel2 {
+  width: 100%;
+  height: 60vh;
+  background-image: url("./ImagenesProyecto/Index/mujerdeportiva4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fondoCarrusel3 {
+  width: 100%;
+  height: 60vh;
+  background-image: url("./ImagenesProyecto/Index/mujerdeportiva5.jpg");
+  background-size: cover;
+  background-position: center;
+} */
+
+/* @keyframes efectoPrincipal {
+  25% {
+    background-image: url("./ImagenesProyecto/Index/mujerdeportiva4.jpg");
+    color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+  }
+  50% {
+    background-image: url("./ImagenesProyecto/Index/mujerdeportiva5.jpg");
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+  }
+  75% {
+    background-image: url("./ImagenesProyecto/Index/hombredeportista.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+} */
+
+.tamañoIconos {
+  /* transform: scale(1.201, 1.201); */
+  font-size: x-large;
+  color: coral;
+}
+
+.tamañoIconos2 {
+  font-size: xx-large;
+  color: coral;
+}
+
+.contenedorPadre {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.contenedorFlexLanzamientos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 7px;
+}
+
+.contenedorFlezLanzamientosHijo {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.contenedorFlezLanzamientosHijo2 {
+  background-image: url("./ImagenesProyecto/Index/");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.contenedorFlexUnder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url("./ImagenesProyecto/Index/barranav.jpg");
+  color: coral;
+  width: 100%;
+  max-height: 5vh;
+  font-size: large;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+  align-items: flex-start;
+  border: 2px solid coral;
+}
+
+/*Termina sección Flex*/
+/*Empieza sección Grid*/
+.gridBarraSeccion {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 65px 42vh;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.titBH {
+  text-align: center;
+  background-color: #e6dcd0;
+  width: 100%;
+  height: 5vh;
+}
+
+.imgBH {
+  height: 40vh;
+  border: black 1px solid;
+}
+
+.gridSeccion {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-rows: 64vh;
+  column-gap: 25px;
+  padding: 10px;
+  justify-content: center;
+}
+
+section p {
+  font-family: Roboto Condensed;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+}
+
+.articuloH {
+  height: 50vh;
+  width: 100%;
+}
+
+.fondoNaranja {
+  background-image: linear-gradient(180deg, #ff5100, #130802);
+}
+
+.fondoNaranja:hover {
+  background-color: coral;
+}
+
+.flexCartas {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-right: 7px;
+}
+
+/*Media Queries*/
+@media (max-width: 600px) {
+  .gridSeccion {
+    grid-template-columns: 100%;
+    grid-template-rows: 80vh 80vh;
+  }
+  .articuloH {
+    height: 70vh;
+  }
+  .contenedorFlexLanzamientos1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 7px;
+  }
+  .contenedorFlezLanzamientosHijo1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+  }
+  .mismoTamaño2 {
+    width: 100%;
+    height: 48vh;
+    margin: 7px;
+    background-size: cover;
+    position: center;
+    border-radius: 10%;
+  }
+  .contenedorFlezLanzamientosHijo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7px;
+  }
+  .mismoTamaño {
+    width: 100%;
+    height: 48vh;
+    margin: 0px;
+    background-size: cover;
+    position: center;
+    border-radius: 10%;
+  }
+  ul a {
+    font-size: small;
+  }
+  .contenedorFlexUnder {
+    height: 8vh;
+    font-size: small;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+  .small {
+    margin: 0%;
+    font-size: small;
+  }
+  .imgMapa {
+    width: 80%;
+  }
+}
