@@ -28,8 +28,8 @@
 ul a {
   list-style: none;
   text-decoration: none;
-  font-family: Roboto Condensed;
-  color: black;
+  font-family: "Anton", sans-serif;
+  color: rgb(228, 91, 41);
   font-weight: light;
   font-size: large;
 }
@@ -110,8 +110,10 @@ nav a:hover {
 .lighter {
   font-weight: lighter;
 }
-.akaya {
-  font-family: "Akaya Telivigala", cursive;
+
+.anton {
+  font-family: "Anton", sans-serif;
+  color: rgb(228, 91, 41);
 }
 
 /*Termina sección de clases para estilos de imprenta*/
