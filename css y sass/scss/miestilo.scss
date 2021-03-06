@@ -37,13 +37,13 @@ p {
   }
 }
 
-@each $indumentaria in indumentaria1, indumentaria2, indumentaria3 {
-  .#{$indumentaria}-s {
-    background-image: url("/ImagenesProyecto/Index/#{$indumentaria}.png");
-    background-size: cover;
-    background-position: center;
-  }
-}
+// @each $indumentaria in indumentaria1, indumentaria2, indumentaria3 {
+//   .#{$indumentaria}-s {
+//     background-image: url("/ImagenesProyecto/Index/#{$indumentaria}.png");
+//     background-size: cover;
+//     background-position: center;
+//   }
+// }
 
 /* MAPS */
 
@@ -51,6 +51,7 @@ $colores: (
   blanco: whitesmoke,
   naranja: #ff5618,
   black: black,
+  azul: blue,
 );
 /* Bucle declarado*/
 @each $paletaColores, $color in $colores {
@@ -106,12 +107,39 @@ $colores: (
   flex-flow: row wrap;
   justify-content: space-evenly;
   margin: 7px;
-  background-image: url("/ImagenesProyecto/Index/graffitinaranja.png");
   background-position: center;
   .calzado__mf {
     display: flex;
     flex-direction: column;
     margin: 7px;
+  }
+}
+
+/* Seccion nosotros */
+
+.flexQS {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  .flexQS__seccion {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flexQS__seccion2 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  .flexQS__img {
+    border-radius: 5%;
+    width: 90%;
+    height: 70vh;
   }
 }
 
@@ -131,6 +159,35 @@ $colores: (
     }
     .footer--s1 {
       width: 25%;
+    }
+  }
+}
+
+/*Media Queries*/
+@media (max-width: 600px) {
+  .flexQS {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    .flexQS__seccion {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .flexQS__seccion2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+    }
+    .flexQS__img {
+      border-radius: 5%;
+      width: 90%;
+      height: 40vh;
     }
   }
 }

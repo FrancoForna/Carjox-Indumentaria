@@ -190,13 +190,12 @@ nav a:hover {
   margin: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 20px;
+  height: 50vh;
 }
 .imgMapa1 {
-  width: 80%;
   max-height: 70vh;
-  border-radius: 5%;
 }
 
 .imgMapa2 {
