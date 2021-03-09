@@ -149,6 +149,14 @@ $colores: (
   }
 }
 
+.flexPF {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
 .footer {
   padding: 50px;
   width: 100%;
