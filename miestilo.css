@@ -13,7 +13,7 @@
   width: 100%;
   z-index: 1;
   background-image: url("./ImagenesProyecto/Index/barranav.jpg");
-  max-height: 5vh;
+  max-height: 6vh;
   position: -webkit-sticky;
   position: sticky;
   top: 0.01px;
@@ -49,7 +49,7 @@ ul ul {
 }
 
 ul ul li {
-  padding: 10px;
+  padding: 18px;
   display: block;
   background-image: url("./ImagenesProyecto/Index/barranav.jpg");
   border: coral 2px solid;
@@ -69,7 +69,6 @@ a {
 nav a:hover {
   font-weight: bolder;
 }
-
 /*Utilizar siempre antes que left solo*/
 
 /*Sección de clases para estilos de imprenta*/
@@ -404,6 +403,20 @@ nav a:hover {
   align-items: flex-start;
   border: 2px solid coral;
 }
+.contenedorFlexUnder2 {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url("./ImagenesProyecto/Index/barranav.jpg");
+  color: coral;
+  width: 100%;
+  max-height: 5vh;
+  font-size: large;
+  margin: 0;
+  justify-content: space-around;
+  align-items: flex-start;
+  border: 2px solid coral;
+}
 
 /*Termina sección Flex*/
 /*Empieza sección Grid*/
@@ -424,6 +437,15 @@ nav a:hover {
 }
 
 .imgBH {
+  height: 40vh;
+  border: black 1px solid;
+}
+.imgBH1 {
+  height: 40vh;
+  border: black 1px solid;
+}
+.imgBH2 {
+  display: none;
   height: 40vh;
   border: black 1px solid;
 }
@@ -475,11 +497,21 @@ section p {
 @media (max-width: 600px) {
   .gridSeccion {
     grid-template-columns: 100%;
-    grid-template-rows: 80vh 80vh;
+    grid-template-rows: 70vh 70vh 70vh 70vh;
     font-family: "Roboto", sans-serif;
   }
   .articuloH {
-    height: 70vh;
+    height: 60vh;
+  }
+  .imgBH1 {
+    display: none;
+    height: 40vh;
+    border: black 1px solid;
+  }
+  .imgBH2 {
+    display: inline;
+    height: 40vh;
+    border: black 1px solid;
   }
   .contenedorFlexLanzamientos1 {
     display: flex;
@@ -557,5 +589,33 @@ section p {
   .imgMapa2 {
     width: 100%;
     border-radius: 5%;
+  }
+  .contenedorFlexUnder {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url("./ImagenesProyecto/Index/barranav.jpg");
+    color: coral;
+    width: 100%;
+    max-height: 5vh;
+    font-size: large;
+    margin: 0;
+    justify-content: space-around;
+    align-items: flex-start;
+    border: 2px solid coral;
+  }
+  .contenedorFlexUnder2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url("./ImagenesProyecto/Index/barranav.jpg");
+    color: coral;
+    width: 100%;
+    max-height: 5vh;
+    font-size: large;
+    margin: 0;
+    justify-content: space-around;
+    align-items: flex-start;
+    border: 2px solid coral;
   }
 }
