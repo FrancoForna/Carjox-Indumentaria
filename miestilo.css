@@ -7,17 +7,19 @@
 }
 
 .navConf {
+  padding: 3px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: 100%;
   z-index: 1;
   background-image: url("./ImagenesProyecto/Index/barranav.jpg");
-  max-height: 6vh;
+  max-height: 8vh;
   position: -webkit-sticky;
   position: sticky;
   top: 0.01px;
-  border: 2px solid coral;
+  border-top: 2px solid coral;
+  border-bottom: 2px solid coral;
   margin: 0;
 }
 
@@ -29,7 +31,7 @@ ul {
   padding: 0;
 }
 ul a {
-  padding: 30px;
+  padding: 50px;
   list-style: none;
   text-decoration: none;
   font-family: "Anton", sans-serif;
@@ -49,6 +51,7 @@ ul ul {
 }
 
 ul ul li {
+  margin: 1px;
   padding: 18px;
   display: block;
   background-image: url("./ImagenesProyecto/Index/barranav.jpg");
@@ -297,58 +300,8 @@ nav a:hover {
   width: 800px;
   height: 64vh;
   background-size: cover;
-  /* animation-name: efectoPrincipal;
-    animation-iteration-count: infinite;
-    animation-timing-function: step-start;
-    animation-duration: 20s;
-    animation-delay: 0s;
-    background-size: cover;
-    color: whitesmoke; */
 }
 
-/* .fondoCarrusel1 {
-  width: 100%;
-  height: 60vh;
-  background-image: url("./ImagenesProyecto/Index/Mujerdeportiva33.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.fondoCarrusel2 {
-  width: 100%;
-  height: 60vh;
-  background-image: url("./ImagenesProyecto/Index/mujerdeportiva4.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.fondoCarrusel3 {
-  width: 100%;
-  height: 60vh;
-  background-image: url("./ImagenesProyecto/Index/mujerdeportiva5.jpg");
-  background-size: cover;
-  background-position: center;
-} */
-
-/* @keyframes efectoPrincipal {
-  25% {
-    background-image: url("./ImagenesProyecto/Index/mujerdeportiva4.jpg");
-    color: whitesmoke;
-    background-size: cover;
-    background-position: center;
-  }
-  50% {
-    background-image: url("./ImagenesProyecto/Index/mujerdeportiva5.jpg");
-    background-size: cover;
-    background-position: center;
-    color: whitesmoke;
-  }
-  75% {
-    background-image: url("./ImagenesProyecto/Index/hombredeportista.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-} */
 
 .tamañoIconos {
   /* transform: scale(1.201, 1.201); */
@@ -390,18 +343,20 @@ nav a:hover {
 }
 
 .contenedorFlexUnder {
+  padding: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-image: url("./ImagenesProyecto/Index/barranav.jpg");
   color: coral;
   width: 100%;
-  max-height: 5vh;
-  font-size: large;
+  max-height: 6vh;
+  font-size: x-large;
   margin: 0;
   justify-content: space-around;
   align-items: flex-start;
-  border: 2px solid coral;
+  border-top: 2px solid coral;
+  border-bottom: 2px solid coral;
 }
 .contenedorFlexUnder2 {
   display: none;
@@ -457,10 +412,14 @@ nav a:hover {
   margin-right: 20px;
   display: grid;
   grid-template-columns: 24% 24% 24% 24%;
-  grid-template-rows: 64vh;
+  grid-template-rows: 54vh;
   column-gap: 25px;
-  padding: 10px;
+  padding: 15px;
   justify-content: center;
+}
+
+.textUnder {
+  padding-top: 20px;
 }
 
 section p {
@@ -473,7 +432,7 @@ section p {
 }
 
 .articuloH {
-  height: 50vh;
+  max-height: 50vh;
   width: 100%;
 }
 
@@ -499,9 +458,6 @@ section p {
     grid-template-columns: 100%;
     grid-template-rows: 70vh 70vh 70vh 70vh;
     font-family: "Roboto", sans-serif;
-  }
-  .articuloH {
-    height: 60vh;
   }
   .imgBH1 {
     display: none;
@@ -548,8 +504,30 @@ section p {
     position: center;
     border-radius: 10%;
   }
+  .navConf {
+    padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    z-index: 1;
+    background-image: url("./ImagenesProyecto/Index/barranav.jpg");
+    max-height: 8vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0.01px;
+    border-top: 2px solid coral;
+    border-bottom: 2px solid coral;
+    margin: 0;
+  }
+  
   ul a {
-    font-size: small;
+    padding: 50px;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Anton", sans-serif;
+    color: rgb(15, 14, 14);
+    font-size: x-large;
   }
   .contenedorFlexUnder {
     height: 8vh;
@@ -611,11 +589,14 @@ section p {
     background-image: url("./ImagenesProyecto/Index/barranav.jpg");
     color: coral;
     width: 100%;
-    max-height: 5vh;
+    max-height: 8vh;
     font-size: large;
     margin: 0;
+    padding: 5px;
     justify-content: space-around;
     align-items: flex-start;
-    border: 2px solid coral;
+    border: 0;
+    border-top: 2px solid coral;
+    border-bottom: 2px solid coral;
   }
 }
