@@ -351,6 +351,7 @@ nav a:hover {
   color: coral;
   width: 100%;
   max-height: 6vh;
+  word-spacing: 2px;
   font-size: x-large;
   margin: 0;
   justify-content: space-around;
