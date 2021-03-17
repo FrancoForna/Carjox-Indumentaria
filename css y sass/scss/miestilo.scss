@@ -37,16 +37,6 @@ p {
   }
 }
 
-// @each $indumentaria in indumentaria1, indumentaria2, indumentaria3 {
-//   .#{$indumentaria}-s {
-//     background-image: url("/ImagenesProyecto/Index/#{$indumentaria}.png");
-//     background-size: cover;
-//     background-position: center;
-//   }
-// }
-
-/* MAPS */
-
 $colores: (
   blanco: whitesmoke,
   naranja: #ff5618,
@@ -66,12 +56,14 @@ $colores: (
   padding: 20px 0 20px;
   margin: 0;
   opacity: 1;
-  text-align: center;
   .header__div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     .header__logo {
-      height: 15vh;
-      margin: 10px;
+      max-height: 15vh;
     }
   }
 }
