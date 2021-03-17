@@ -98,8 +98,8 @@ $colores: (
 }
 
 .tituloSec {
+  text-align: center;
   padding-left: 30px;
-  text-align: left;
   font-size: large;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
@@ -174,20 +174,26 @@ $colores: (
   }
 }
 
-.flexE {
-  padding: 20px;
-  display: flex;
-  flex-flow: row wrap;
-  width: 50%;
-}
 .flexP {
   width: 100%;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-}
-.flexTE {
-  width: 100%;
+  flex-flow: row wrap;
+  .flexP_1 {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 40%;
+    max-height: 90vh;
+    justify-content: center;
+  }
+  .flexP_2 {
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 60%;
+    text-align: left;
+    align-items: flex-start;
+  }
 }
 
 .flexTyC {
@@ -195,6 +201,8 @@ $colores: (
   display: flex;
   flex-flow: row wrap;
   width: 100%;
+  text-align: center;
+  justify-content: center;
 }
 .footer {
   padding: 50px;
@@ -214,6 +222,13 @@ $colores: (
       width: 25%;
     }
   }
+}
+
+.imgSI {
+  height: 100%;
+  width: 90%;
+  border-radius: 50%;
+  padding: 20px;
 }
 
 /*Media Queries*/
@@ -244,12 +259,29 @@ $colores: (
     }
   }
 
-  .flexE {
-    padding: 20px;
+  .flexP {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
+    .flexP_1 {
+      display: none;
+      padding: 10px;
+      display: flex;
+      flex-flow: row wrap;
+      width: 40%;
+      max-height: 90vh;
+      justify-content: center;
+    }
+    .flexP_2 {
+      padding: 20px;
+      display: flex;
+      flex-flow: column wrap;
+      width: 100%;
+      text-align: left;
+      align-items: flex-start;
+    }
   }
+
   .flexPF {
     display: flex;
     flex-direction: row;
@@ -273,7 +305,11 @@ $colores: (
       text-align: left;
     }
   }
-  .imgflexPF1 {
+  .imgSI {
     display: none;
+    height: 100%;
+    width: 90%;
+    border-radius: 50%;
+    padding: 20px;
   }
 }
