@@ -2,10 +2,23 @@
 .miBody {
   background-image: linear-gradient(90deg, white, #ffdcc8);
   margin: 0 auto;
-  /* padding: 0; */
   font-family: Roboto Condensed;
 }
 
+.navQB {
+  display: none;
+}
+.navQ {
+  display: none;
+}
+
+.dropBar {
+  background-image: linear-gradient(90deg, white, #ffdcc8);
+  font-family: "Anton", sans-serif;
+  color: #ff5618;
+  background-image: url("./ImagenesProyecto/Index/barranav.jpg");
+  font-size: large;
+}
 .navConf {
   padding: 3px;
   display: flex;
@@ -14,7 +27,7 @@
   width: 100%;
   z-index: 1;
   background-image: url("./ImagenesProyecto/Index/barranav.jpg");
-  max-height: 8vh;
+  max-height: 12vh;
   position: -webkit-sticky;
   position: sticky;
   top: 0.01px;
@@ -26,7 +39,9 @@
 .altNav {
   transform: scale(0.9);
 }
+
 ul {
+  display: inline;
   margin: 0;
   padding: 0;
 }
@@ -43,6 +58,8 @@ li {
   text-align: center;
   display: inline-block;
   position: relative;
+  background-color: rgb(255, 172, 142);
+  border-radius: 10px 10px 10px 10px;
 }
 
 ul ul {
@@ -195,22 +212,28 @@ nav a:hover {
 }
 
 .mapa {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   width: 100%;
   margin: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
+  padding-left: 20px;
   max-height: 50vh;
 }
 .imgMapa1 {
-  max-height: 70vh;
+  width: 50%;
+  max-height: 50vh;
 }
 
 .imgMapa2 {
-  width: 50%;
-  max-height: 70vh;
-  border-radius: 5%;
+  width: 45%;
+  max-height: 50vh;
+}
+
+.imgMapa {
+  width: 90%;
+  height: 40vh;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .transformScale {
@@ -302,7 +325,6 @@ nav a:hover {
   background-size: cover;
 }
 
-
 .tamañoIconos {
   /* transform: scale(1.201, 1.201); */
   font-size: x-large;
@@ -350,7 +372,7 @@ nav a:hover {
   background-image: url("./ImagenesProyecto/Index/barranav.jpg");
   color: coral;
   width: 100%;
-  max-height: 6vh;
+  height: 6vh;
   word-spacing: 2px;
   font-size: x-large;
   margin: 0;
@@ -392,10 +414,6 @@ nav a:hover {
   height: 5vh;
 }
 
-.imgBH {
-  height: 40vh;
-  border: black 1px solid;
-}
 .imgBH1 {
   height: 40vh;
   border: black 1px solid;
@@ -421,6 +439,8 @@ nav a:hover {
 
 .textUnder {
   padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: small;
 }
 
 section p {
@@ -433,7 +453,7 @@ section p {
 }
 
 .articuloH {
-  max-height: 50vh;
+  max-height: 70vh;
   width: 100%;
 }
 
@@ -452,12 +472,75 @@ section p {
   justify-content: space-evenly;
   margin-right: 7px;
 }
+/*Prueba para github*/
+
+.titulosPrin {
+  padding: 10px;
+  margin: 7px;
+  background-image: url("/ImagenesProyecto/Index/imgtitulo.jpg");
+  color: #ff5618;
+  text-align: center;
+  font-size: large;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.titulosPrin__secu {
+  font-family: "Roboto", sans-serif;
+  color: #ff5618;
+  font-weight: bold;
+  font-size: large;
+}
+.titulosPrin--secc {
+  padding: 10px;
+  margin: 7px;
+  color: #ff5618;
+  background-color: #e6dcd0;
+  text-align: center;
+  font-size: x-large;
+  text-transform: uppercase;
+  width: 100%;
+  height: 7vh;
+}
+
+.Mujerdeportiva33-carrusel {
+  background-image: url("/ImagenesProyecto/Index/Mujerdeportiva33.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.mujerdeportiva4-carrusel {
+  background-image: url("/ImagenesProyecto/Index/mujerdeportiva4.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.mujerdeportiva6-carrusel {
+  background-image: url("/ImagenesProyecto/Index/mujerdeportiva6.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
 
 /*Media Queries*/
 @media (max-width: 600px) {
-  .gridSeccion {
+  .gridBarraSeccion {
+    padding: 5px;
+    display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70vh 70vh 70vh 70vh;
+    grid-template-rows: 42vh;
+    justify-items: center;
+    overflow: hidden;
+  }
+
+  .gridSeccion {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40vh 40vh;
     font-family: "Roboto", sans-serif;
   }
   .imgBH1 {
@@ -466,6 +549,7 @@ section p {
     border: black 1px solid;
   }
   .imgBH2 {
+    width: 100%;
     display: inline;
     height: 40vh;
     border: black 1px solid;
@@ -505,31 +589,7 @@ section p {
     position: center;
     border-radius: 10%;
   }
-  .navConf {
-    padding: 5px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    z-index: 1;
-    background-image: url("./ImagenesProyecto/Index/barranav.jpg");
-    max-height: 8vh;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0.01px;
-    border-top: 2px solid coral;
-    border-bottom: 2px solid coral;
-    margin: 0;
-  }
-  
-  ul a {
-    padding: 50px;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Anton", sans-serif;
-    color: rgb(15, 14, 14);
-    font-size: x-large;
-  }
+
   .contenedorFlexUnder {
     height: 8vh;
     font-size: small;
@@ -542,6 +602,22 @@ section p {
   }
   .imgMapa {
     width: 80%;
+  }
+  .navConf {
+    padding: 3px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    z-index: 1;
+    background-image: url("./ImagenesProyecto/Index/barranav.jpg");
+    height: 120vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0.01px;
+    border-top: 2px solid coral;
+    border-bottom: 2px solid coral;
+    margin: 0;
   }
 
   ul a {
@@ -586,18 +662,81 @@ section p {
   .contenedorFlexUnder2 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-image: url("./ImagenesProyecto/Index/barranav.jpg");
     color: coral;
     width: 100%;
-    max-height: 8vh;
-    font-size: large;
+    max-height: 6vh;
     margin: 0;
-    padding: 5px;
+    padding-bottom: 50px;
     justify-content: space-around;
     align-items: flex-start;
     border: 0;
     border-top: 2px solid coral;
     border-bottom: 2px solid coral;
+  }
+
+  .navConf {
+    display: none;
+    padding: 3px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    z-index: 1;
+    background-image: url("./ImagenesProyecto/Index/barranav.jpg");
+    max-height: 7vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0.01px;
+    border-top: 2px solid coral;
+    border-bottom: 2px solid coral;
+    margin: 0;
+  }
+  ul {
+    display: none;
+  }
+  .navQB {
+    border-radius: 5%;
+    background-image: url("/ImagenesProyecto/Index/imgtitulo.jpg");
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    border-top: coral 2px solid;
+    border-bottom: coral 2px solid;
+  }
+  .navQB_i {
+    display: flex;
+    padding: 6px;
+    font-size: large;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-radius: 15%;
+  }
+  .navQ {
+    display: inline;
+  }
+  .mapa {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    max-height: 150vh;
+  }
+  .imgMapa1 {
+    padding: 20px;
+    max-height: 90vh;
+    width: 100%;
+  }
+
+  .imgMapa2 {
+    max-height: 70vh;
+    width: 100%;
+    border-radius: 10%;
+  }
+  .imgMapa {
+    width: 95%;
   }
 }
