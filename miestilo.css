@@ -1,7 +1,8 @@
 @charset "UTF-8";
 .miBody {
   background-image: linear-gradient(90deg, white, #ffdcc8);
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   font-family: Roboto Condensed;
 }
 
@@ -20,14 +21,14 @@
   font-size: large;
 }
 .navConf {
+  background-image: linear-gradient(100deg, rgb(255, 255, 255), #e28650);
   padding: 3px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: 100%;
   z-index: 1;
-  background-image: url("./ImagenesProyecto/Index/barranav.jpg");
-  max-height: 12vh;
+  height: 6vh;
   position: -webkit-sticky;
   position: sticky;
   top: 0.01px;
@@ -46,11 +47,11 @@ ul {
   padding: 0;
 }
 ul a {
-  padding: 50px;
+  font-weight: bolder;
+  padding: 10px;
   list-style: none;
   text-decoration: none;
-  font-family: "Anton", sans-serif;
-  color: rgb(15, 14, 14);
+  font-family: "Roboto", sans-serif;
   font-size: large;
 }
 
@@ -58,8 +59,6 @@ li {
   text-align: center;
   display: inline-block;
   position: relative;
-  background-color: rgb(255, 172, 142);
-  border-radius: 10px 10px 10px 10px;
 }
 
 ul ul {
@@ -71,7 +70,7 @@ ul ul li {
   margin: 1px;
   padding: 12px;
   display: block;
-  background-image: url("./ImagenesProyecto/Index/barranav.jpg");
+  background-image: linear-gradient(250deg, rgb(255, 255, 255), #e28650);
   border: coral 2px solid;
   background-color: #ffe3df;
 }
@@ -80,10 +79,15 @@ ul li:hover ul {
   display: block;
   text-align: center;
 }
+a:hover {
+  font-size: large;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #ff5618;
+}
 
 a {
   color: black;
-  text-transform: uppercase;
 }
 
 nav a:hover {
@@ -241,6 +245,12 @@ nav a:hover {
 }
 
 .tamañoForm {
+  border-top: 1px rgb(184, 182, 182) solid;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-image: url("/ImagenesProyecto/Index/imgtitulo2.png");
+  background-size: contain;
+  opacity: 1;
   width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -343,6 +353,7 @@ nav a:hover {
 }
 
 .contenedorFlexLanzamientos {
+  border-top: 2px rgb(184, 182, 182) solid;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -425,16 +436,15 @@ nav a:hover {
 }
 
 .gridSeccion {
-  margin-top: 30px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  margin-right: 20px;
+  width: 100%;
+  background-image: url("/ImagenesProyecto/Index/imgtitulo.png");
+  padding-bottom: 10px;
+  padding-left: 35px;
   display: grid;
-  grid-template-columns: 24% 24% 24% 24%;
-  grid-template-rows: 54vh;
-  column-gap: 25px;
-  padding: 15px;
-  justify-content: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  column-gap: px;
+  align-content: space-around;
 }
 
 .textUnder {
@@ -454,7 +464,7 @@ section p {
 
 .articuloH {
   max-height: 70vh;
-  width: 100%;
+  width: 90%;
 }
 
 .fondoNaranja {
@@ -472,60 +482,6 @@ section p {
   justify-content: space-evenly;
   margin-right: 7px;
 }
-/*Prueba para github*/
-
-.titulosPrin {
-  padding: 10px;
-  margin: 7px;
-  background-image: url("/ImagenesProyecto/Index/imgtitulo.jpg");
-  color: #ff5618;
-  text-align: center;
-  font-size: large;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-}
-.titulosPrin__secu {
-  font-family: "Roboto", sans-serif;
-  color: #ff5618;
-  font-weight: bold;
-  font-size: large;
-}
-.titulosPrin--secc {
-  padding: 10px;
-  margin: 7px;
-  color: #ff5618;
-  background-color: #e6dcd0;
-  text-align: center;
-  font-size: x-large;
-  text-transform: uppercase;
-  width: 100%;
-  height: 7vh;
-}
-
-.Mujerdeportiva33-carrusel {
-  background-image: url("/ImagenesProyecto/Index/Mujerdeportiva33.jpg");
-  width: 100%;
-  height: 60vh;
-  background-size: cover;
-  background-position: center;
-}
-
-.mujerdeportiva4-carrusel {
-  background-image: url("/ImagenesProyecto/Index/mujerdeportiva4.jpg");
-  width: 100%;
-  height: 60vh;
-  background-size: cover;
-  background-position: center;
-}
-
-.mujerdeportiva6-carrusel {
-  background-image: url("/ImagenesProyecto/Index/mujerdeportiva6.jpg");
-  width: 100%;
-  height: 60vh;
-  background-size: cover;
-  background-position: center;
-}
 
 /*Media Queries*/
 @media (max-width: 600px) {
@@ -539,8 +495,10 @@ section p {
   }
 
   .gridSeccion {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 40vh 40vh;
+    border-bottom: 1px solid coral;
+    width: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 55vh 55vh;
     font-family: "Roboto", sans-serif;
   }
   .imgBH1 {
@@ -697,7 +655,7 @@ section p {
   }
   .navQB {
     border-radius: 5%;
-    background-image: url("/ImagenesProyecto/Index/imgtitulo.jpg");
+    background-image: linear-gradient(100deg, rgb(255, 255, 255), #e28650);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;

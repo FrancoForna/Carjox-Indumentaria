@@ -31,7 +31,7 @@
     <body class="miBody">
         <header class="header">
             <div class="header__div">
-                <img src="https://d26lpennugtm8s.cloudfront.net/stores/001/168/333/themes/common/logo-852208336-1593186866-1a15961ea7165e242b53dc608e1e77841593186866-480-0.png?0" class="header__logo" alt="logocarjox">
+                <img src="https://d26lpennugtm8s.cloudfront.net/stores/001/168/333/themes/common/logo-852208336-1593186866-1a15961ea7165e242b53dc608e1e77841593186866-480-0.png?0" class="header__logo container-md" alt="logocarjox">
             </div>
         </header>
         <div class="navQB">
@@ -119,14 +119,10 @@
 </div>
 </div>
         <nav class="navConf">
-            <ul> 
-                <li><a href="index.html">Inicio</a>
-                     <ul>
-                        <li><a href="index.html#ofertas">Lanzamientos!</a></li>
-                        <li><a href="index.html#contacto">Suscribite!</a></li>
-                     </ul>
+            <ul > 
+                <li class="borderNav"><a href="index.html">Inicio</a>
                 </li> 
-                <li><a href="indumentaria.html">indumentaria</a>
+                <li ><a href="indumentaria.html">indumentaria</a>
                      <ul>
                         <li><a href="indumentaria.html#hombres">Hombres</a></li>
                         <li><a href="indumentaria.html#mujeres">Mujeres</a></li>
@@ -134,26 +130,36 @@
                         <li><a href="indumentaria.html#accesorios">Accesorios</a></li>
                      </ul>
                 </li>
-                <li><a href="informacion.html">Informacion</a></li>
-                <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="suscripcion.html">Suscripcion</a></li>
+                <li class="borderNav"><a href="informacion.html">Informacion</a>
+                     <ul>
+                        <li><a href="informacion.html#PF">Preguntas frecuentes</a></li>
+                        <li><a href="informacion.html#ED">Envios y devoluciones</a></li>
+                        <li><a href="informacion.html#TC">Terminos y condiciones</a></li>
+                     </ul>
+                </li>
+                <li ><a href="nosotros.html">Sobre Nosotros</a>
+                     <ul>
+                        <li><a href="nosotros.html#QS">Quienes somos</a></li>
+                        <li><a href="nosotros.html#NL">Nuestro local</a></li>
+                        <li><a href="nosotros.html#DE">Donde encontrarnos</a></li>
+                     </ul>
+                </li>
+
+                <li class="borderNav"><a href="suscripcion.html">Suscripcion</a></li>
             </ul>
         </nav>
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <div id="carouselExampleIndicators" class="carrusel carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner" style="height: 60vh; width: 100%;">
+                <div class="carrusel_hijo carousel-inner">
                   <div class="carousel-item active Mujerdeportiva33-carrusel">
-                    <strong class="xxlarge black robotoLight">Make it better</strong>
                   </div>
                   <div class="carousel-item mujerdeportiva4-carrusel">
-                    <strong class="xxlarge blanco robotoLight">Be stronger</strong>
                   </div>
                   <div class="carousel-item mujerdeportiva6-carrusel">
-                    <strong class="xxlarge black robotoLight">Don´t give up</strong>
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -165,23 +171,12 @@
                   <span class="sr-only">Next</span>
                 </a>    
               </div>
-            <section  class="contenedorFlexUnder ">
-            </section>
-            <section  class="contenedorFlexUnder2 ">
+            <!-- <section  class="contenedorFlexUnder ">
+            </section> -->
+            <!-- <section  class="contenedorFlexUnder2 ">
                         <p class="black lighter large anton">Envios gratis con tu compra de $3000 o mas</p>
-            </section>
-            <!-- <h1 style="border-bottom: 2px solid coral; border-top: 2px solid coral;" class="titulosPrin wow animate__backInRight">calzado</h1> -->
-            <Section class="calzado">
-                    <div class="calzado__mf">
-                        <img src="./ImagenesProyecto/Index/calzado masculino gris.jpg" class="grad transformScale margin20 mismoTamaño2 wow animate__fadeInLeft" alt="calzadoGrisMasculino">
-                        <p class="titulosPrin__secu">Calzado masculino</p>
-                    </div>
-                    <div class="calzado__mf">
-                        <img src="./ImagenesProyecto/Index/calzado femenino gris.jpg" class="grad transformScale margin20 mismoTamaño2 wow animate__fadeInRight" alt="calzadoGrisFemenino">
-                        <p class="titulosPrin__secu">Calzado femenino</p>
-                    </div>
-            </Section>
-            <h2 class="titulosPrin">indumentaria</h2>
+            </section> -->
+            <h1 class="titulosPrin">indumentaria</h1>
             <section class="contenedorFlexLanzamientos">
                 <div class="contenedorFlezLanzamientosHijo indumentaria1-s">
                   <a href="indumentaria.html#mujeres">
@@ -202,6 +197,17 @@
                   </a>
                 </div>
             </section>
+            <h2 class="titulosPrin">Calzado</h2>
+            <Section class="calzado">
+                <div class="calzado__mf">
+                    <img src="./ImagenesProyecto/Index/calzado masculino gris.jpg" class="grad transformScale margin20 mismoTamaño2 wow animate__fadeInLeft" alt="calzadoGrisMasculino">
+                    <p class="titulosPrin__secu">Calzado masculino</p>
+                </div>
+                <div class="calzado__mf">
+                    <img src="./ImagenesProyecto/Index/calzado femenino gris.jpg" class="grad transformScale margin20 mismoTamaño2 wow animate__fadeInRight" alt="calzadoGrisFemenino">
+                    <p class="titulosPrin__secu">Calzado femenino</p>
+                </div>
+        </Section>
             <h2 class="titulosPrin">Nuevos lanzamientos!</h2>
             <section class="contenedorFlexLanzamientos">
             <div class="contenedorFlezLanzamientosHijo2">
@@ -221,17 +227,17 @@
             <footer id="footer" class="footer">
                     <div class="footer--s1">
                         <h2>Informacion</h2>
-                        <p>Sobre nosotros</p>
-                        <p>Envios y devoluciones</p>
-                        <p>Preguntas frecuentes</p>
-                        <p>Terminos y condiciones</p>
+                        <p><a class="robotoLight" href="nosotros.html">Sobre nosotros</a></p>
+                        <p><a href="informacion.html#ED">Envios y devoluciones</a></p>
+                        <p><a href="informacion.html#PF">Preguntas frecuentes</a></p>
+                        <p><a href="informacion.html#TC">Terminos y condiciones</a></p>
                     </div>
                     <div class="footer__s23">
                         <h2>Envios y medios de pago</h2>
-                        <p>Cuotas sin interés con tarjetas de crédito!</p>
-                        <img src="./ImagenesProyecto/Index/tarjetas1.png" class="tamañoBanner" alt="tarjetasCredito">
-                        <p>Envios a todo el pais!</p>
-                        <img src="./ImagenesProyecto/Index/andreani.png" class="tamañoBannerA" alt="andreani">
+                        <p><a href="informacion.html#C">Cuotas sin interés con tarjetas de crédito!</a></p>
+                        <p><a href="informacion.html#MP">Visa, Mastercard, American Express y muchas mas!</a></p>
+                        <p><a href="informacion.html#ED">Envios a todo el pais</a></p>
+                        <p><a href="informacion.html#GE">Consulta gastos de envio</a></p>
                     </div>
                     <div class="footer__s23"> 
                         <h2>Contactanos!</h2>

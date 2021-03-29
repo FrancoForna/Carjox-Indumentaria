@@ -43,21 +43,21 @@ p {
 .Mujerdeportiva33-carrusel {
   background-image: url("/ImagenesProyecto/Index/Mujerdeportiva33.jpg");
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   background-size: cover;
   background-position: center; }
 
 .mujerdeportiva4-carrusel {
   background-image: url("/ImagenesProyecto/Index/mujerdeportiva4.jpg");
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   background-size: cover;
   background-position: center; }
 
 .mujerdeportiva6-carrusel {
   background-image: url("/ImagenesProyecto/Index/mujerdeportiva6.jpg");
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   background-size: cover;
   background-position: center; }
 
@@ -75,37 +75,78 @@ p {
   color: blue; }
 
 .colorIcons {
-  color: #ff5618; }
+  color: #292524; }
 
 .header {
   background-image: url("/ImagenesProyecto/Index/graffitinaranja.png");
-  width: 100%;
-  padding: 20px 0 20px;
   margin: 0;
   opacity: 1; }
   .header .header__div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     width: 100%; }
-    .header .header__div .header__logo {
-      max-height: 15vh; }
+  .header .header__logo {
+    max-height: 15vh; }
+    @media (max-width: 600px) {
+      .header .header__logo {
+        width: 90%; } }
+
+.carrusel {
+  padding-bottom: 20px;
+  max-height: 90vh; }
+  .carrusel .carrusel_hijo {
+    max-height: 72vh;
+    width: 100%; }
+  .carrusel .carrusel_cuadros {
+    width: 100%;
+    height: 20vh;
+    z-index: 2;
+    padding: 20px;
+    opacity: 0.5;
+    background-color: black; }
+
+.borderNav {
+  border-right: 2px solid coral;
+  border-left: 2px solid coral; }
 
 .titulosPrin {
-  padding: 10px;
-  margin: 7px;
-  background-image: url("/ImagenesProyecto/Index/imgtitulo.jpg");
+  line-height: 1.6;
+  opacity: 1;
+  letter-spacing: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   color: #ff5618;
   text-align: center;
   font-size: large;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-  font-weight: bold; }
+  font-weight: bolder; }
+
+.titulosPrin1 {
+  font-size: 44px;
+  margin-top: 15px;
+  background-size: cover;
+  background-position: center;
+  line-height: 1.6;
+  opacity: 1;
+  letter-spacing: 10px;
+  padding: 20px;
+  color: #ff5618;
+  text-align: center;
+  font-size: large;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder; }
 
 .titulosPrin__secu {
+  padding: 5px;
   font-family: "Roboto", sans-serif;
-  color: #ff5618;
+  color: #474747;
   font-weight: bold;
   font-size: large; }
 
@@ -129,6 +170,7 @@ p {
   font-weight: bold; }
 
 .calzado {
+  border-top: 2px #b4b4b4 solid;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -262,17 +304,19 @@ p {
 /*Media Queries*/
 @media (max-width: 600px) {
   .footer {
-    padding: 10px;
+    padding-left: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-flow: wrap;
-    align-content: center;
+    align-content: space-around;
     font-family: "Roboto", sans-serif; }
     .footer .footer__s23 {
-      width: 80%; }
+      text-align: center;
+      width: 100%; }
     .footer .footer--s1 {
-      width: 80%; }
+      text-align: center;
+      width: 100%; }
   .flexP {
     width: 100%;
     display: flex;
